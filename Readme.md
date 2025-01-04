@@ -1,4 +1,4 @@
-#RenderGPS
+# RenderGPS
 Synthetic glare-point shadowgraphy data generation in Blender with the LuxCore package (code)
 
 by Maximilian Dreisbach (Institute of Fluid Mechanics (ISTM) - Karlsruhe Institute of Technology (KIT))
