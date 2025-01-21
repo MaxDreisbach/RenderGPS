@@ -20,7 +20,7 @@ If you have any questions regarding this code, please contact Maximilian (maximi
 - stl files of gas-liquid interfaces
 
 ## Tested for: 
-Blender 2.93 and BlendLuxCore 2.6
+- Blender 2.93 and BlendLuxCore 2.6
 
 ## Getting Started
 - Run this script out of Blender install dir with the command: "blender -b --python "P3_drop_large_rotation.py"
