@@ -11,7 +11,7 @@ blender -b --python "P3_drop_large_rotation.py"
 
 dirname = "../../Data/Fink2018_non_axis_symmetrical/stl/"
 blender_file = 'refresh_june_GPU_fast_96.3deg_30deg.blend'
-SUBDIV = True # Subdivision refinement (significantly increases render time, but also quality by increasing mesh resolution and smoothing)
+SUBDIV = True # Subdivision refinement (significantly increases render time, but also rendering quality by increasing mesh resolution and smoothing)
 FLIP_NORMALS = False # For meshes with inverted normals
 START = 0
 END = 1500
