@@ -5,15 +5,15 @@
 #Run this script out of Blender install dir with the command (on Windows):
 
 ''' Usage: Open through blender
-export PATH=/net/istmhome/users/hi227/Projects/blender-2.91.0-linux64/
+export PATH=../Projects/blender-2.91.0-linux64/
 blender -b --python "P3_drop_large_rotation.py"
 '''
 
 dirname = "../../Data/Fink2018_non_axis_symmetrical/stl/"
 blender_file = 'refresh_june_GPU_fast_96.3deg_30deg.blend'
-SUBDIV = True #Subdivision refinement (significantly increases render time, but also quality by increasing mesh resolution and smoothing
-FLIP_NORMALS = False
-START = 6
+SUBDIV = True # Subdivision refinement (significantly increases render time, but also quality by increasing mesh resolution and smoothing)
+FLIP_NORMALS = False # For meshes with inverted normals
+START = 0
 END = 1500
 
 
@@ -93,14 +93,14 @@ for count,file in enumerate(filelist):
         print('Done')
         print("--- %s seconds to apply level 2 subdivision ---" % (time.time() - start_time))
 
-    # NEW: scale mesh
+    # Scale mesh
     print('Scaling mesh...', end=' ', flush=True)
-    k = 0.625  # scale constant
+    k = 0.625  # set scale constant to match with PIFu Rendering for masks and calibration matrices - TODO: implement mask rendering, etc. in Blender
     bpy.ops.transform.resize(value=(k, k, k))
     bpy.ops.object.transform_apply(scale=True)
     print('Done')
 
-    # NEW: translate mesh to z=0
+    # Translate mesh to z=0 (if necessary)
     print('Translating mesh to z=0...', end=' ', flush=True)
     loc = ob.location
     if file.startswith("droplet"):
@@ -110,7 +110,7 @@ for count,file in enumerate(filelist):
     ob.location = loc + mathutils.Vector((0, 0, z_tranlate))
     print('Done')
 
-    # NEW: Rotate the mesh by 360° in 10° increments
+    # Rotate the mesh by 360° in 10° increments
     angles = range(0,360,10)
     print('Rotation angles:', end=' ', flush=True)
     print(angles)
