@@ -3,8 +3,7 @@ import os
 import mathutils
 
 ''' Usage: Open through blender
-export PATH=/net/istmhome/users/hi227/Projects/blender-2.91.0-linux64/
-blender -b --python "/net/istmhome/users/hi227/Projects/Blender_droplet_shear_flow/ConvertSTL2OBJ.py"
+blender -b --python "./Blender_droplet_shear_flow/ConvertSTL2OBJ.py"
 '''
 
 input_path = "stl/"
