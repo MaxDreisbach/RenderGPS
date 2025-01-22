@@ -2,7 +2,7 @@
 Synthetic glare-point shadowgraphy data generation in Blender with the LuxCore package (code) \
 by Maximilian Dreisbach (Institute of Fluid Mechanics (ISTM) - Karlsruhe Institute of Technology (KIT))
 
-This code repository contains the script for synthetic data generation through phsically-based rendering used in the research article "Spatio-temporal reconstruction of droplet impingement dynamics by means of color-coded glare points and deep learning" (https://doi.org/10.1088/1361-6501/ad8771). \
+This code repository contains the script for synthetic data generation through phsically-based rendering used in the research article ["Spatio-temporal reconstruction of droplet impingement dynamics by means of color-coded glare points and deep learning"](https://doi.org/10.1088/1361-6501/ad8771). \
 The digital twin modeled in the rendering enironment Blender mirrors the experimental setup of the glare-point shadowgraphy experiments used for the imaging of gas-liquid interfaces in two-phase flows.
 The rendered synethtic glare-point shadowgraphy images can be used to train neural networks for interface reconstruction as presenetd in the aforementioned article.
 
