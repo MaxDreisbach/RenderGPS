@@ -27,4 +27,4 @@ If you have any questions regarding this code, please contact Maximilian (maximi
 ```
 blender -b --python "P3_drop_large_rotation.py"
 ```
-- The helper file `ConvertSTL2OBJ.py` can be used to convert `.stl` files to `.obj` files in Blender
+- The helper file `ConvertSTL2OBJ.py` can be used to convert `.stl` files to `.obj` files in Blender or vice-versa with little adaptation.
