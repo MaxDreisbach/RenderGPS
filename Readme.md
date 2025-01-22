@@ -12,16 +12,19 @@ If you have any questions regarding this code, please contact Maximilian (maximi
 - Reads stl files of a gas-liquid interface geometry
 - applies correct materials (water inside, air outside)
 - applies subdivision surface modifier to smooth meshes
-- renders the synethtic images with the curent .blend-file settings, i.e. light source angles and droplet rotation angles, different seeds, focus settings of objective lens
+- renders the synethtic images with the curent `.blend`-file settings, i.e. light source angles and droplet rotation angles, different seeds, focus settings of objective lens
 - Outputs raw and denoised images
 
 ## Requirements
-- .blend file containing the modeled rendering setup (you can find it here: https://doi.org/10.35097/mmnxkbqqeye8p5tx)
-- stl files of gas-liquid interfaces
+- `.blend` file containing the modeled rendering setup (you can find it here: https://doi.org/10.35097/mmnxkbqqeye8p5tx)
+- `.stl` files of gas-liquid interfaces
 
 ## Tested for: 
 - Blender 2.93 and BlendLuxCore 2.6
 
 ## Getting Started
-- Run this script out of Blender install dir with the command: "blender -b --python "P3_drop_large_rotation.py"
-- The helper file x can be used to convert '.stl' files to '.obj' files in Blender
+- To start the render routine run the script `P3_drop_large_rotation.py` out of the Blender install dir
+```
+blender -b --python "P3_drop_large_rotation.py"
+```
+- The helper file `ConvertSTL2OBJ.py` can be used to convert `.stl` files to `.obj` files in Blender
