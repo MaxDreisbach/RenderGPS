@@ -16,7 +16,7 @@ If you have any questions regarding this code, please contact Maximilian (maximi
 - Outputs raw and denoised images
 
 ## Requirements
-- `.blend` file containing the modeled rendering setup (you can find it here: https://doi.org/10.35097/mmnxkbqqeye8p5tx)
+- `.blend` file containing the modeled rendering setup ([KITopen](https://doi.org/10.35097/mmnxkbqqeye8p5tx))
 - `.stl` files of gas-liquid interfaces
 
 ## Tested for: 
